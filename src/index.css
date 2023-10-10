@@ -1,0 +1,28 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* :focus:not(:focus-visible) {:first
+    outline: none;
+    background-color: aqua;
+} */
+
+/* purple */
+.form-focus-container:has(:where(input[type="range"], select, textarea):focus) {
+    box-shadow: 0 0 0 0.25rem rgba(45, 13, 253, 0.25);
+}
+/* blue */
+.form-focus-container:has(:where(input[type="range"], select, textarea):focus-visible) {
+    box-shadow: 0 0 0 0.25rem rgb(13 110 253 / 25%);
+}
+
+/* purple */
+.btn-focus:focus {
+    outline: 0;
+    box-shadow: 0 0 0 0.25rem rgba(45, 13, 253, 0.25);
+}
+/* blue */
+.btn-focus:focus-visible {
+    outline: 0;
+    box-shadow: 0 0 0 0.25rem rgb(13 110 253 / 25%);
+}
