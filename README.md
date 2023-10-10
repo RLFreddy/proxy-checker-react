@@ -15,3 +15,9 @@
 
 ## Para ver los logs de la aplicación:
     sudo docker-compose logs -t -f proxy-checker-react
+
+## Ejecutar sin contenedor:
+    Version de node usada v18.18.0, recomiendo usar nvm y ejecutar el comando "nvm use":
+    npm i -g pnpm
+    pnpm i
+    pnpm start
