@@ -17,7 +17,7 @@
     sudo docker-compose logs -t -f proxy-checker-react
 
 ## Ejecutar sin contenedor:
-    #Version de node usada v18.18.0, recomiendo usar nvm y ejecutar el comando "nvm use":
+    #Versión de node usado v18.18.0, recomiendo usar nvm y ejecutar el comando "nvm use" y despues ejecutar los siguientes comandos:
     npm i -g pnpm
     pnpm i
     pnpm start
